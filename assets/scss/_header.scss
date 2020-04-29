@@ -1,0 +1,18 @@
+/* header section */
+header {
+  margin: 50px 10px 0 10px;
+}
+
+header h1 {
+  font-size: 60px;
+}
+
+@media only screen and (min-width: 591px) {  
+  header {
+    height: 100vh;
+  }
+  
+  header {
+    margin: 150px 100px 0 100px;
+  }
+}

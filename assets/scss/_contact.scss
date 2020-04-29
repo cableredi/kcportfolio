@@ -1,0 +1,62 @@
+/* contact section */
+#contact {
+  clear: both;
+  margin-top: 50px;
+}
+
+#contact h3,
+.contact-icons {
+  text-align: center;
+}
+
+.contact-header {
+  color: $main-text-color;
+  padding-top: 50px;
+}
+
+.contact-icons {
+  padding-top: 50px;
+  font-size: 30px;
+}
+
+.contact-icons .fa-linkedin,
+.contact-icons .fa-github,
+.contact-icons .fa-envelope {
+  color: $secondary-text-color;
+}
+
+.contact-icons {
+  margin-bottom: 20px;
+}
+
+.contact-icons a {
+  margin: 0 25px;
+}
+
+.contact-icons a:hover i {
+  color: $highlight-text-color;
+  transition: 0.4s;
+}
+
+@media only screen and (min-width: 591px) {  
+  #contact h3 {
+    padding-top: 60px;
+    font-size: 40px;
+  }
+  
+  .contact-icons {
+    padding-top: 40px;
+    font-size: 40px;
+  }
+
+}
+
+@media only screen and (min-width:870px) {  
+  #contact {
+    height: 100vh;
+  }
+  
+  .contact-icons {
+    font-size: 40px;
+  }
+}
