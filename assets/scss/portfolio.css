@@ -46,12 +46,12 @@ a {
 
 .main header h3 {
   margin: 20px 0;
-  font-family: 'Calistoga', cursive;
+  font-family: "Calistoga", cursive;
   letter-spacing: 0.1em;
 }
 
 .main header h4 {
-  font-family: 'Calistoga', cursive;
+  font-family: "Calistoga", cursive;
   letter-spacing: 0.1em;
 }
 
@@ -73,7 +73,7 @@ a {
 
 .main__projects h2 {
   color: #b4775a;
-  font-family: 'Calistoga', cursive;
+  font-family: "Calistoga", cursive;
   letter-spacing: 0.1em;
 }
 
@@ -232,7 +232,7 @@ a {
 
 .main__contact h2 {
   color: #b4775a;
-  font-family: 'Calistoga', cursive;
+  font-family: "Calistoga", cursive;
   letter-spacing: 0.1em;
 }
 
@@ -269,7 +269,13 @@ footer {
   font-weight: 400;
 }
 
-@media only screen and (min-width: 340px) {
+@media (min-width: 500px) {
+  .main__projects-project-modal-content-img img {
+    width: 400px;
+  }
+}
+
+@media (min-width: 700px) {
   .main {
     margin: 400px 40px 0 40px;
   }
@@ -303,7 +309,7 @@ footer {
     padding: 20px;
   }
   .main__projects-project-modal-content-img img {
-    width: 600px;
+    width: 550px;
   }
   .main__projects-project-modal-content-name {
     font-size: 24px;
@@ -313,6 +319,12 @@ footer {
   }
   .main__projects-project-modal-content-tech {
     font-size: 16px;
+  }
+}
+
+@media (min-width: 800px) {
+  .main__projects-project-modal-content-img img {
+    width: 600px;
   }
 }
 
