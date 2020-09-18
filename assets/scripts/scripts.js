@@ -3,28 +3,35 @@
 /* get current year */
 document.getElementById("year").innerHTML = new Date().getFullYear();
 
-
 /* side nav */
 function openNav() {
-  document.getElementById("mySidenav").style.width = "130px";
+  document.getElementById("navbar__sidenav").style.width = "130px";
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("navbar__sidenav").style.width = "0";
 }
-
 
 /* Modal */
-let modal = document.getElementsByClassName("modal");
-let btn = document.getElementsByClassName("btn");
-let span = document.getElementsByClassName("close");
+let modal = document.getElementsByClassName("main__projects-project-modal");
+let btn = document.getElementsByClassName("main__projects-project-info");
+let span = document.getElementsByClassName(
+  "main__projects-project-modal-content-close"
+);
 
 for (let i = 0; i < modal.length; i++) {
-  btn[i].onclick = function() {
+  btn[i].onclick = function () {
     modal[i].style.display = "block";
-  }
+  };
 
-  span[i].onclick = function() {
+  span[i].onclick = function () {
     modal[i].style.display = "none";
-  }
+  };
 }
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+};

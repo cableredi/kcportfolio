@@ -5,116 +5,286 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
-  color: $main-text-color;
-  background: $main-background-color;
+  color: $font-color;
 }
 
 html {
   scroll-behavior: smooth;
+
+  background: url("../images/background.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 a {
-  color: black;
+  color: $font-color;
   text-decoration: none;
+  display: block;
 }
 
-p {
-  margin-top: 20px;
-}
+.main {
+  margin: 60px 10px 0 10px;
 
-h1 {
-  color: $main-text-color;
-  font-size: 80px;
-}
+  & header {
+    padding: 20px;
+    border: 1px solid $border-color;
+    border-radius: 10px;
+    @include box-shadow(0 0 20px rgba(0, 0, 0, 0.5));
+    background: $background-color;
+    font-size: 16px;
+    & h1 {
+      font-family: "Rock Salt", cursive;
+      color: $accent-color;
+      margin-left: 10px;
+    }
+    & h3 {
+      margin: 20px 0;
+      font-family: 'Calistoga', cursive;
+      letter-spacing: 0.1em;
+    }
+    & h4 {
+      font-family: 'Calistoga', cursive;
+      letter-spacing: 0.1em;
+    }
+    & p {
+      line-height: 1.6em;
+      margin-top: 10px;
+    }
+  }
 
-h2 {
-  color: $secondary-text-color;
-  font-size: 40px;
-  margin-top: 10px;
-}
+  &__projects {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid $border-color;
+    border-radius: 10px;
+    @include box-shadow(0 0 20px rgba(0, 0, 0, 0.5));
+    background: $background-color;
 
-h3 {
-  color: $secondary-text-color;
-  font-size: 40px;
-}
+    & h2 {
+      color: $accent-color;
+      font-family: 'Calistoga', cursive;
+      letter-spacing: 0.1em;
+    }
 
-h4 {
-  color: $highlight-text-color;
-  font-size: 24px;
-  margin-top: 80px;
-  letter-spacing: 0.2rem;
-}
+    & hr {
+      border-color: $border-color;
+      margin-top: 10px;
+    }
 
-hr {
-  border-color: $main-text-color;
+    &-contents {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    &-project {
+      margin-top: 10px;
+      padding: 2px;
+
+      &-info {
+        cursor: pointer;
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+        & img {
+          margin: 10px auto 0;
+          width: 230px;
+          @include box-shadow(0 0 20px rgba(0, 0, 0, 0.5));
+        }
+        &-name {
+          margin: 10px 0;
+          font-size: 14px;
+          font-weight: 600;
+        }
+        &-tech {
+          font-weight: 500;
+          & li {
+            list-style-type: none;
+            display: inline-block;
+          }
+        }
+      }
+
+      &-modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        margin-top: 50px;
+
+        &-content {
+          background-color: $background-color;
+          margin: 5% auto;
+          padding: 10px;
+          border: 1px solid #888;
+          border-radius: 10px;
+          width: 80%;
+          &-close {
+            color: $font-color;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            &:hover,
+            &:focus {
+              color: $accent-color;
+              text-decoration: none;
+              cursor: pointer;
+            }
+          }
+          &-name {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid $border-color;
+          }
+          &-desc {
+            font-weight: 500;
+            font-size: 16px;
+            margin-bottom: 10px;
+            text-align: center;
+          }
+          &-img {
+            margin-bottom: 10px;
+            text-align: center;
+            & img {
+              @include box-shadow(0 0 20px rgba(0, 0, 0, 0.5));
+              width: 200px;
+            }
+          }
+          &-tech {
+            list-style-type: none;
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 16px;
+            & li {
+              display: inline-block;
+            }
+          }
+          &-icons {
+            list-style-type: none;
+            text-align: center;
+            & li {
+              display: inline-block;
+              margin: 0 5px;
+              & a i:hover {
+                color: $accent-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__contact {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid $border-color;
+    border-radius: 10px;
+    @include box-shadow(0 0 20px rgba(0, 0, 0, 0.5));
+    background: $background-color;
+
+    & h2 {
+      color: $accent-color;
+      font-family: 'Calistoga', cursive;
+      letter-spacing: 0.1em;
+    }
+
+    & hr {
+      border-color: $border-color;
+      margin-top: 10px;
+    }
+
+    &-header {
+      margin-top: 20px;
+      text-align: center;
+      color: $accent-color;
+    }
+
+    &-icons {
+      text-align: center;
+      font-size: 30px;
+      & li {
+        display: inline-block;
+        margin: 20px 10px;
+        & a i:hover {
+          color: $accent-color;
+        }
+      }
+    }
+  }
 }
 
 footer {
   text-align: center;
   font-size: 12px;
-  margin: 20px 0;
+  margin: 10px;
+  color: $footer-color;
+  font-weight: 400;
 }
 
-.logo {
-  color: black;
-  font-family: 'Rock Salt', cursive;
-}
+@media only screen and (min-width: 340px) {
+  .main {
+    margin: 400px 40px 0 40px;
 
-.highlight-color {
-  color: $highlight-text-color;
-}
+    & header {
+      padding: 50px;
+      font-size: 20px;
+      & h1 {
+        margin-left: 40px;
+      }
+    }
 
-.bulletpoint-icons {
-  font-size: 15px;
-  color: $highlight-text-color;
-  vertical-align: middle;
-}
+    &__projects {
+      margin-top: 50px;
+      padding: 50px;
+      &-project {
+        margin-top: 20px;
+        padding: 10px;
+        &-info {
+          font-size: 16px;
+          & img {
+            margin: 20px auto 0;
+            width: 300px;
+          }
+          &-name {
+            font-size: 20px;
+          }
+        }
 
-.moreButton {
-  font-size: 16px;
-  margin-top: 30px;
-  padding: 15px;
-  border: 0 solid;
-  @include box-shadow(inset 0 0 20px rgba(255, 255, 255, 0));
-  outline: 1px solid;
-  outline-color: rgba(255, 255, 255, 0.5);
-  outline-offset: 0px;
-  text-shadow: none;
-  -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-  display: block;
-  background-color: $highlight-background-color;
-}
-
-.moreButton:hover {
-  border: 1px solid;
-  @include box-shadow(inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2));
-  outline-color: rgba(255, 255, 255, 0);
-  outline-offset: 15px;
-}
-
-header .moreButton {
-  width: 175px;
-}
-
-#about .moreButton {
-  width: 300px;
-}
-
-section {
-  margin: 0 20px;
-  padding-top: 10px;
-}
-
-@media only screen and (min-width: 591px) {  
-  section {
-    margin: 0 50px;
-    padding-top: 100px;
-  }
-
-  #about .moreButton {
-    width: 325px;
+        &-modal {
+          &-content {
+            margin: 15% auto;
+            padding: 20px;
+            &-img {
+              & img {
+                width: 600px;
+              }
+            }
+            &-name {
+              font-size: 24px;
+            }
+            &-desc {
+              font-size: 20px;
+            }
+            &-tech {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
   }
 }

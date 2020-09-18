@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-163943090-1"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163943090-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -17,74 +15,39 @@
     </script>
 
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width" , initial-scale=1" />
     <meta name="description" content="Kimberly Cable portfolio" />
 
     <title>Kimberly Cable portfolio</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto%7CRock+Salt&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
-    />
-    <link
-      href="./assets/css/portfolio.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto%7CRock+Salt%7CCalistoga&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css" />
+    <link href="./assets/scss/portfolio.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
-    <nav id="navbar">
-      <a href="#">
-        <span class="logo">KC</span>
-      </a>
-      <ul class="menu">
-        <li><a href="#about">&centerdot; About</a></li>
-        <li><a href="#projects">&centerdot;&centerdot; Projects</a></li>
-        <li>
-          <a href="#contact">&centerdot; &centerdot; &centerdot; Contact</a>
-        </li>
-      </ul>
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-          >&times;</a
-        >
-        <a href="#about">&centerdot; About</a>
-        <a href="#projects">&centerdot;&centerdot; Projects</a>
-        <a href="#contact">&centerdot;&centerdot;&centerdot; Contact</a>
+    <nav class="navbar">
+      <div class="navbar__menu">
+        <div class="navbar__menu-logo">
+          <a href="#">KC</a>
+        </div>
+        <div class="navbar__menu-spacer"></div>
+        <div class="navbar__menu-items">
+          <div><a href="#about">About</a></div>
+          <div><a href="#projects">Projects</a></div>
+          <div>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
       </div>
-      <div class="hamburger" onclick="openNav()">&#9776;</div>
     </nav>
 
     <main class="main">
-      <header>
+      <header id="about">
         <h4>Hi! My name is</h4>
         <h1>Kimberly Cable</h1>
         <h3>I'm a Full-Stack Developer based in Denver, CO.</h3>
-        <a href="#about" class="moreButton"
-          >Get to know me&nbsp;&nbsp;&nbsp;&nbsp;<i
-            class="fas fa-angle-double-down"
-          ></i
-        ></a>
-      </header>
-
-      <section id="about">
-        <h2><span>&centerdot; </span>About Me</h2>
-        <hr />
-
-        <p>Hi, I’m <span class="highlight-color">Kimberly</span>.</p>
-        <p>
-          A <span class="highlight-color">Full-Stack developer</span> in the
-          greater Denver, CO area.
-        </p>
         <p>
           Coding for me is an art form and puzzle I enjoy solving. Whether it’s
           CSS, Javascript (ES6), PHP, React or a new set of tools, the challenge
@@ -97,387 +60,462 @@
           When I'm not coding, you can find my in my studio creating fused and
           stained glass or out enjoying the Colorado mountains.
         </p>
-        <p>
-          Here's some of the
-          <span class="highlight-color">technologies</span> I've been using:
-        </p>
+      </header>
 
-        <div class="technologies">
-          <div class="technology">
-            <span class="bulletpoint-icons">&#9658; </span>HTML
-          </div>
-          <div class="technology">
-            <span class="bulletpoint-icons">&#9658; </span>CSS/SCSS
-          </div>
-          <div class="technology">
-            <span class="bulletpoint-icons">&#9658; </span>Javascript (ES6)
-          </div>
-          <div class="technology">
-            <span class="bulletpoint-icons">&#9658; </span>JQuery
-          </div>
-          <div class="technology">
-            <span class="bulletpoint-icons">&#9658; </span>React
-          </div>
-          <div class="technology">
-            <span class="bulletpoint-icons">&#9658; </span>Node .js
-          </div>
-          <div class="technology">
-            <span class="bulletpoint-icons">&#9658; </span>PHP (MVC)
-          </div>
-        </div>
-        <a href="#projects" class="moreButton"
-          >Check out some projects I've done&nbsp;&nbsp;&nbsp;&nbsp;<i
-            class="fas fa-angle-double-down"
-          ></i
-        ></a>
-      </section>
-
-      <section id="projects">
-        <h2><span>&centerdot;&centerdot; </span>Projects</h2>
+      <section id="projects" class="main__projects">
+        <h2>Projects</h2>
         <hr />
 
-        <div class="project">
-          <img src="./assets/images/videogameblog.png" alt="VideoGameBlog screenshot" />
-          <div class="project-information">
-            <div class="project-name">
-              Video Game Blog
+        <div class="main__projects-contents">
+          <div class="main__projects-project">
+            <div class="main__projects-project-info">
+              <img src="./assets/images/videogameblog.png" alt="VideoGameBlog screenshot" />
+              <div class="main__projects-project-info-name">
+                Video Game Blog
+              </div>
+              <div class="main__projects-project-info-tech">
+                <ul>
+                  <li>SCSS/CSS <span class="verticalBar">&verbar;</span></li>
+                  <li>Node.js <span class="verticalBar">&verbar;</span></li>
+                  <li>React/Hooks <span class="verticalBar">&verbar;</span></li>
+                  <li>Express <span class="verticalBar">&verbar;</span></li>
+                  <li>PostgreSQL</li>
+                </ul>
+              </div>
             </div>
-            <div class="project-desc">
-              With Video Game Blog comment about the latest videos from 24G
-            </div>
-            <div class="project-tech">
-              <ul>
-                <li>SCSS/CSS <span class="verticalBar">&verbar;</span></li>
-                <li>Node.js <span class="verticalBar">&verbar;</span></li>
-                <li>React/Hooks <span class="verticalBar">&verbar;</span></li>
-                <li>Express <span class="verticalBar">&verbar;</span></li>
-                <li>PostgreSQL <span class="verticalBar"></span></li>
-              </ul>
-            </div>
-            <div class="project-icons">
-              <ul>
-                <li>
-                  <a
-                    href="https://github.com/cableredi/VideoGameBlog"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a
-                    href="https://videogameblog.vercel.app/"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </li>
-              </ul>
+
+            <div class="main__projects-project-modal">
+              <div class="main__projects-project-modal-content">
+                <span class="main__projects-project-modal-content-close">&times;</span>
+                <div class="main__projects-project-modal-content-name">
+                  Video Game Blog
+                </div>
+                <div class="main__projects-project-modal-content-img">
+                  <img src="./assets/images/videogameblog.png" alt="VideoGameBlog screenshot" />
+                </div>
+                <div class="main__projects-project-modal-content-desc">
+                  Challenge: to create a video game blog based on requirements.
+                </div>
+                <div class="main__projects-project-modal-content-tech">
+                  <ul>
+                    <li>SCSS/CSS <span class="verticalBar">&verbar;</span></li>
+                    <li>Node.js <span class="verticalBar">&verbar;</span></li>
+                    <li>
+                      React/Hooks <span class="verticalBar">&verbar;</span>
+                    </li>
+                    <li>Express <span class="verticalBar">&verbar;</span></li>
+                    <li>PostgreSQL</li>
+                  </ul>
+                </div>
+                <div class="main__projects-project-modal-content-icons">
+                  <ul>
+                    <li>
+                      <a href="https://github.com/cableredi/VideoGameBlog" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://videogameblog.vercel.app/" target="_blank" rel="noopener">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="project">
-          <img src="./assets/images/StockTweets.PNG" alt="StockTweets screenshot" />
-          <div class="project-information">
-            <div class="project-name">
-              StockTweets
+          <div class="main__projects-project">
+            <div class="main__projects-project-info">
+              <img src="./assets/images/StockTweets.PNG" alt="StockTweets screenshot" />
+              <div class="main__projects-project-info-name">StockTweets</div>
+              <div class="main__projects-project-info-tech">
+                <ul>
+                  <li>SCSS/CSS <span class="verticalBar">&verbar;</span></li>
+                  <li>Node.js <span class="verticalBar">&verbar;</span></li>
+                  <li>React/Hooks <span class="verticalBar">&verbar;</span></li>
+                  <li>Express</li>
+                </ul>
+              </div>
             </div>
-            <div class="project-desc">
-              StockTweets gets all the latest tweets in realtime from your favorite Stock Tickers powered by StockTwits API
-            </div>
-            <div class="project-tech">
-              <ul>
-                <li>SCSS/CSS <span class="verticalBar">&verbar;</span></li>
-                <li>Node.js <span class="verticalBar">&verbar;</span></li>
-                <li>React/Hooks <span class="verticalBar">&verbar;</span></li>
-                <li>Express</li>
-              </ul>
-            </div>
-            <div class="project-icons">
-              <ul>
-                <li>
-                  <a
-                    href="https://github.com/cableredi/stocktweets"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a
-                    href="https://stocktweets.now.sh"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </li>
-              </ul>
+
+            <div class="main__projects-project-modal">
+              <div class="main__projects-project-modal-content">
+                <span class="main__projects-project-modal-content-close">&times;</span>
+                <div class="main__projects-project-modal-content-name">
+                  StockTweets
+                </div>
+                <div class="main__projects-project-modal-content-img">
+                  <img src="./assets/images/StockTweets.PNG" alt="StockTweets screenshot" />
+                </div>
+                <div class="main__projects-project-modal-content-desc">
+                  StockTweets gets all the latest tweets in realtime from your
+                  favorite Stock Tickers powered by StockTwits API
+                </div>
+                <div class="main__projects-project-modal-content-tech">
+                  <ul>
+                    <li>SCSS/CSS <span class="verticalBar">&verbar;</span></li>
+                    <li>Node.js <span class="verticalBar">&verbar;</span></li>
+                    <li>
+                      React/Hooks <span class="verticalBar">&verbar;</span>
+                    </li>
+                    <li>Express</li>
+                  </ul>
+                </div>
+                <div class="main__projects-project-modal-content-icons">
+                  <ul>
+                    <li>
+                      <a href="https://github.com/cableredi/stocktweets" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://stocktweets.now.sh" target="_blank" rel="noopener">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="project">
-          <img src="./assets/images/Bedbugs.PNG" alt="Bedbugs screenshot" />
-          <div class="project-information">
-            <div class="project-name">
-              bedbugs
+          <div class="main__projects-project">
+            <div class="main__projects-project-info">
+              <img src="./assets/images/Bedbugs.PNG" alt="Bedbugs screenshot" />
+              <div class="main__projects-project-info-name">bedbugs</div>
+              <div class="main__projects-project-info-tech">
+                <ul>
+                  <li>SCSS/CSS <span class="verticalBar">&verbar;</span></li>
+                  <li>Node.js <span class="verticalBar">&verbar;</span></li>
+                  <li>React <span class="verticalBar">&verbar;</span></li>
+                  <li>Express <span class="verticalBar">&verbar;</span></li>
+                  <li>PostgreSQL</li>
+                </ul>
+              </div>
             </div>
-            <div class="project-desc">
-              bedbugs gives users the ability to input any applications they are
-              working on to help them track the bugs they are working on.
-            </div>
-            <div class="project-tech">
-              <ul>
-                <li>SCSS/CSS <span class="verticalBar">&verbar;</span></li>
-                <li>Node.js <span class="verticalBar">&verbar;</span></li>
-                <li>React <span class="verticalBar">&verbar;</span></li>
-                <li>Express <span class="verticalBar">&verbar;</span></li>
-                <li>PostgreSQL <span class="verticalBar"></span></li>
-              </ul>
-            </div>
-            <div class="project-icons">
-              <ul>
-                <li>
-                  <a
-                    href="https://github.com/cableredi/bedbugs-client"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a
-                    href="https://github.com/cableredi/bedbugs-api"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a
-                    href="https://bedbugs.now.sh"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </li>
-              </ul>
+
+            <div class="main__projects-project-modal">
+              <div class="main__projects-project-modal-content">
+                <span class="main__projects-project-modal-content-close">&times;</span>
+                <div class="main__projects-project-modal-content-name">
+                  bedbugs
+                </div>
+                <div class="main__projects-project-modal-content-img">
+                  <img src="./assets/images/Bedbugs.PNG" alt="Bedbugs screenshot" />
+                </div>
+                <div class="main__projects-project-modal-content-desc">
+                  bedbugs gives users the ability to input any applications they
+                  are working on to help them track the bugs they are working
+                  on.
+                </div>
+                <div class="main__projects-project-modal-content-tech">
+                  <ul>
+                    <li>SCSS/CSS <span class="verticalBar">&verbar;</span></li>
+                    <li>Node.js <span class="verticalBar">&verbar;</span></li>
+                    <li>React <span class="verticalBar">&verbar;</span></li>
+                    <li>Express <span class="verticalBar">&verbar;</span></li>
+                    <li>PostgreSQL</li>
+                  </ul>
+                </div>
+                <div class="main__projects-project-modal-content-icons">
+                  <ul>
+                    <li>
+                      <a href="https://github.com/cableredi/bedbugs-client" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/cableredi/bedbugs-api" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://bedbugs.now.sh" target="_blank" rel="noopener">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="project">
-          <img
-            src="./assets/images/MyClassroom.PNG"
-            alt="MyClassroom screenshot"
-          />
-          <div class="project-information">
-            <div class="project-name">
-              MyClassroom
+          <div class="main__projects-project">
+            <div class="main__projects-project-info">
+              <img src="./assets/images/MyClassroom.PNG" alt="MyClassroom screenshot" />
+              <div class="main__projects-project-info-name">MyClassroom</div>
+              <div class="main__projects-project-info-tech">
+                <ul>
+                  <li>SCSS/CSS <span class="verticalBar">&verbar;</span></li>
+                  <li>Node.js <span class="verticalBar">&verbar;</span></li>
+                  <li>React <span class="verticalBar">&verbar;</span></li>
+                  <li>Express <span class="verticalBar">&verbar;</span></li>
+                  <li>PostgreSQL</li>
+                </ul>
+              </div>
             </div>
-            <div class="project-desc">
-              MyClassroom is a simple and effective way for
-              teachers/professors/tutors/etc to effectively communicate with
-              their students the upcoming assignments, tests, quizzes, projects,
-              etc.
-            </div>
-            <div class="project-tech">
-              <ul>
-                <li>SCSS/CSS <span class="verticalBar">&verbar;</span></li>
-                <li>Node.js <span class="verticalBar">&verbar;</span></li>
-                <li>React <span class="verticalBar">&verbar;</span></li>
-                <li>Express <span class="verticalBar">&verbar;</span></li>
-                <li>PostgreSQL <span class="verticalBar"></span></li>
-              </ul>
-            </div>
-            <div class="project-icons">
-              <ul>
-                <li>
-                  <a
-                    href="https://github.com/cableredi/MyClassroom"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a
-                    href="https://github.com/cableredi/myclassroom-api"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a
-                    href="https://myclassroom.now.sh"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </li>
-              </ul>
+
+            <div class="main__projects-project-modal">
+              <div class="main__projects-project-modal-content">
+                <span class="main__projects-project-modal-content-close">&times;</span>
+                <div class="main__projects-project-modal-content-name">
+                  MyClassroom
+                </div>
+                <div class="main__projects-project-modal-content-img">
+                  <img src="./assets/images/MyClassroom.PNG" alt="MyClassroom screenshot" />
+                </div>
+                <div class="main__projects-project-modal-content-desc">
+                  MyClassroom is a simple and effective way for
+                  teachers/professors/tutors/etc to effectively communicate with
+                  their students the upcoming assignments, tests, quizzes,
+                  projects, etc.
+                </div>
+                <div class="main__projects-project-modal-content-tech">
+                  <ul>
+                    <li>SCSS/CSS <span class="verticalBar">&verbar;</span></li>
+                    <li>Node.js <span class="verticalBar">&verbar;</span></li>
+                    <li>React <span class="verticalBar">&verbar;</span></li>
+                    <li>Express <span class="verticalBar">&verbar;</span></li>
+                    <li>PostgreSQL</li>
+                  </ul>
+                </div>
+                <div class="main__projects-project-modal-content-icons">
+                  <ul>
+                    <li>
+                      <a href="https://github.com/cableredi/MyClassroom" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/cableredi/myclassroom-api" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://myclassroom.now.sh" target="_blank" rel="noopener">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="project">
-          <img
-            src="./assets/images/StudioGhibli.png"
-            alt="Welcome to the World of Studio Ghibli"
-          />
-          <div class="project-information">
-            <div class="project-name">
-              Welcome to the World of Studio Ghibli
+          <div class="main__projects-project">
+            <div class="main__projects-project-info">
+              <img src="./assets/images/StudioGhibli.png" alt="Welcome to the World of Studio Ghibli" />
+              <div class="main__projects-project-info-name">
+                Welcome to the World of Studio Ghibli
+              </div>
+              <div class="main__projects-project-info-tech">
+                <ul>
+                  <li>HTML <span class="verticalBar">&verbar;</span></li>
+                  <li>CSS <span class="verticalBar">&verbar;</span></li>
+                  <li>
+                    Javascript (ES6)
+                    <span class="verticalBar">&verbar;</span>
+                  </li>
+                  <li>JQuery</li>
+                </ul>
+              </div>
             </div>
-            <div class="project-desc">
-              StudioGhibli shows you the world of the Studio Ghibli films. See
-              about each film and the beautiful artwork and posters created for
-              each film.
-            </div>
-            <div class="project-tech">
-              <ul>
-                <li>HTML <span class="verticalBar">&verbar;</span></li>
-                <li>CSS <span class="verticalBar">&verbar;</span></li>
-                <li>
-                  Javascript (ES6)
-                  <span class="verticalBar">&verbar;</span> JQuery
-                </li>
-              </ul>
-            </div>
-            <div class="project-icons">
-              <ul>
-                <li>
-                  <a
-                    href="https://github.com/cableredi/StudioGhibli"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a
-                    href="https://cableredi.github.io/StudioGhibli/"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </li>
-              </ul>
+
+            <div class="main__projects-project-modal">
+              <div class="main__projects-project-modal-content">
+                <span class="main__projects-project-modal-content-close">&times;</span>
+                <div class="main__projects-project-modal-content-name">
+                  Welcome to the World of Studio Ghibli
+                </div>
+                <div class="main__projects-project-modal-content-img">
+                  <img src="./assets/images/StudioGhibli.png" alt="Welcome to the World of Studio Ghibli" />
+                </div>
+                <div class="main__projects-project-modal-content-desc">
+                  StudioGhibli shows you the world of the Studio Ghibli films.
+                  See about each film and the beautiful artwork and posters
+                  created for each film.
+                </div>
+                <div class="main__projects-project-modal-content-tech">
+                  <ul>
+                    <li>HTML <span class="verticalBar">&verbar;</span></li>
+                    <li>CSS <span class="verticalBar">&verbar;</span></li>
+                    <li>
+                      Javascript (ES6)<span class="verticalBar">&verbar;</span>
+                    </li>
+                    <li>
+                      JQuery
+                    </li>
+                  </ul>
+                </div>
+                <div class="main__projects-project-modal-content-icons">
+                  <ul>
+                    <li>
+                      <a href="https://github.com/cableredi/StudioGhibli" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://cableredi.github.io/StudioGhibli/" target="_blank" rel="noopener">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="project">
-          <img
-            src="./assets/images/soccer-quiz-home.png"
-            alt="How well do you know your soccer moves Quiz screenshot"
-          />
-          <div class="project-information">
-            <div class="project-name">
-              Do you know your soccer moves? Quiz
+          <div class="main__projects-project">
+            <div class="main__projects-project-info">
+              <img src="./assets/images/soccer-quiz-home.png"
+                alt="How well do you know your soccer moves Quiz screenshot" />
+              <div class="main__projects-project-info-name">
+                Do you know your soccer moves? Quiz
+              </div>
+              <div class="main__projects-project-info-tech">
+                <ul>
+                  <li>HTML <span class="verticalBar">&verbar;</span></li>
+                  <li>CSS <span class="verticalBar">&verbar;</span></li>
+                  <li>
+                    Javascript (ES6)
+                    <span class="verticalBar">&verbar;</span> JQuery
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="project-desc">
-              Allows users to test their knowledge of various elite soccer
-              moves.
-            </div>
-            <div class="project-tech">
-              <ul>
-                <li>HTML <span class="verticalBar">&verbar;</span></li>
-                <li>CSS <span class="verticalBar">&verbar;</span></li>
-                <li>
-                  Javascript (ES6)
-                  <span class="verticalBar">&verbar;</span> JQuery
-                </li>
-              </ul>
-            </div>
-            <div class="project-icons">
-              <ul>
-                <li>
-                  <a
-                    href="https://github.com/cableredi/soccer-quiz"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <a
-                    href="https://cableredi.github.io/soccer-quiz/"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </li>
-              </ul>
+
+            <div class="main__projects-project-modal">
+              <div class="main__projects-project-modal-content">
+                <span class="main__projects-project-modal-content-close">&times;</span>
+                <div class="main__projects-project-modal-content-name">
+                  Do you know your soccer moves? Quiz
+                </div>
+                <div class="main__projects-project-modal-content-img">
+                  <img src="./assets/images/soccer-quiz-home.png"
+                    alt="How well do you know your soccer moves Quiz screenshot" />
+                </div>
+                <div class="main__projects-project-modal-content-desc">
+                  Allows users to test their knowledge of various elite soccer
+                  moves.
+                </div>
+                <div class="main__projects-project-modal-content-tech">
+                  <ul>
+                    <li>HTML <span class="verticalBar">&verbar;</span></li>
+                    <li>CSS <span class="verticalBar">&verbar;</span></li>
+                    <li>
+                      Javascript (ES6)<span class="verticalBar">&verbar;</span>
+                    </li>
+                    <li>
+                      JQuery
+                    </li>
+                  </ul>
+                </div>
+                <div class="main__projects-project-modal-content-icons">
+                  <ul>
+                    <li>
+                      <a href="https://github.com/cableredi/soccer-quiz" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://cableredi.github.io/soccer-quiz/" target="_blank" rel="noopener">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="project">
-          <img
-            src="./assets/images/IFASoccer-home.png"
-            alt="IFA Soccer screenshot"
-          />
-          <div class="project-information">
-            <div class="project-name">
-              International Futbol Academy, LLC
+          <div class="main__projects-project">
+            <div class="main__projects-project-info">
+              <img src="./assets/images/IFASoccer-home.png" alt="IFA Soccer screenshot" />
+              <div class="main__projects-project-info-name">
+                International Futbol Academy, LLC
+              </div>
+              <div class="main__projects-project-info-tech">
+                <ul>
+                  <li>HTML <span class="verticalBar">&verbar;</span></li>
+                  <li>CSS <span class="verticalBar">&verbar;</span></li>
+                  <li>Javascript <span class="verticalBar">&verbar;</span></li>
+                  <li>Bootstrap <span class="verticalBar">&verbar;</span></li>
+                  <li>
+                    PHP/CodeIgniter <span class="verticalBar">&verbar;</span>
+                  </li>
+                  <li>MySQL <span class="verticalBar"></span></li>
+                </ul>
+              </div>
             </div>
-            <div class="project-desc">
-              IFA Soccer displays information about upcoming camps and allows
-              users the ability to register for camps and pay via PayPal.
-            </div>
-            <div class="project-tech">
-              <ul>
-                <li>HTML <span class="verticalBar">&verbar;</span></li>
-                <li>CSS <span class="verticalBar">&verbar;</span></li>
-                <li>Javascript <span class="verticalBar">&verbar;</span></li>
-                <li>Bootstrap <span class="verticalBar">&verbar;</span></li>
-                <li>
-                  PHP/CodeIgniter <span class="verticalBar">&verbar;</span>
-                </li>
-                <li>MySQL <span class="verticalBar"></span></li>
-              </ul>
-            </div>
-            <div class="project-icons">
-              <ul>
-                <li>
-                  <a
-                    href="http://www.ifasoccer.com"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <i class="fas fa-external-link-alt"></i>
-                  </a>
-                </li>
-              </ul>
+
+            <div class="main__projects-project-modal">
+              <div class="main__projects-project-modal-content">
+                <span class="main__projects-project-modal-content-close">&times;</span>
+                <div class="main__projects-project-modal-content-name">
+                  International Futbol Academy, LLC
+                </div>
+                <div class="main__projects-project-modal-content-img">
+                  <img src="./assets/images/IFASoccer-home.png" alt="IFA Soccer screenshot" />
+                </div>
+                <div class="main__projects-project-modal-content-desc">
+                  IFA Soccer displays information about upcoming camps and
+                  allows users the ability to register for camps and pay via
+                  PayPal.
+                </div>
+                <div class="main__projects-project-modal-content-tech">
+                  <ul>
+                    <li>HTML <span class="verticalBar">&verbar;</span></li>
+                    <li>CSS <span class="verticalBar">&verbar;</span></li>
+                    <li>
+                      Javascript <span class="verticalBar">&verbar;</span>
+                    </li>
+                    <li>Bootstrap <span class="verticalBar">&verbar;</span></li>
+                    <li>
+                      PHP/CodeIgniter <span class="verticalBar">&verbar;</span>
+                    </li>
+                    <li>MySQL <span class="verticalBar"></span></li>
+                  </ul>
+                </div>
+                <div class="main__projects-project-modal-content-icons">
+                  <ul>
+                    <li>
+                      <a href="http://www.ifasoccer.com" target="_blank" rel="noopener">
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="contact">
-        <h2><span>&centerdot;&centerdot;&centerdot; </span>Contact</h2>
+      <section id="contact" class="main__contact">
+        <h2>Contact</h2>
         <hr />
 
-        <h3 class="contact-header">Ways to Get in Touch</h3>
+        <h3 class="main__contact-header">Ways to Get in Touch</h3>
 
-        <div class="contact-icons">
-          <a
-            href="https://www.linkedin.com/in/kimberly-cable"
-            target="_blank"
-            rel="noopener"
-          >
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="https://github.com/cableredi" target="_blank" rel="noopener">
-            <i class="fab fa-github"></i>
-          </a>
-          <a
-            href="mailto:cableredi@comcast.net?Subject=Contact%20Me"
-            target="_top"
-          >
-            <i class="far fa-envelope"></i>
-          </a>
+        <div class="main__contact-icons">
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/kimberly-cable" target="_blank" rel="noopener">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/cableredi" target="_blank" rel="noopener">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:cableredi@comcast.net?Subject=Contact%20Me" target="_top">
+                <i class="far fa-envelope"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -489,4 +527,5 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./assets/scripts/scripts.js"></script>
   </body>
+
 </html>
