@@ -268,37 +268,39 @@ footer {
     &__projects {
       margin-top: 50px;
       padding: 50px;
-      &-project {
-        margin-top: 20px;
-        padding: 10px;
-        &-info {
-          font-size: 16px;
-          & img {
-            margin: 20px auto 0;
-            width: 300px;
-          }
-          &-name {
-            font-size: 20px;
-          }
-        }
-
-        &-modal {
-          &-content {
-            margin: 15% auto;
-            padding: 20px;
-            &-img {
-              & img {
-                width: 550px;
-              }
+      &-content {
+        &-project {
+          margin-top: 20px;
+          padding: 10px;
+          &-info {
+            font-size: 16px;
+            & img {
+              margin: 20px auto 0;
+              width: 300px;
             }
             &-name {
-              font-size: 24px;
-            }
-            &-desc {
               font-size: 20px;
             }
-            &-tech {
-              font-size: 16px;
+          }
+
+          &-modal {
+            &-content {
+              margin: 15% auto;
+              padding: 20px;
+              &-img {
+                & img {
+                  width: 550px;
+                }
+              }
+              &-name {
+                font-size: 24px;
+              }
+              &-desc {
+                font-size: 20px;
+              }
+              &-tech {
+                font-size: 16px;
+              }
             }
           }
         }
