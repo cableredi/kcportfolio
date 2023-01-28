@@ -2,121 +2,180 @@
 <html lang="en">
 
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163943090-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "UA-163943090-1");
-    </script>
-
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" , initial-scale=1" />
     <meta name="description" content="Kimberly Cable portfolio" />
 
-    <title>Kimberly Cable portfolio</title>
+    <title>Kimberly Cable Portfolio</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto%7CRock+Salt%7CCalistoga&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css" />
-    <link href="./assets/scss/portfolio.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/css/styles.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
-    <nav class="navbar">
-      <div class="navbar__menu">
-        <div class="navbar__menu-logo">
-          <a href="#">KC</a>
-        </div>
-        <div class="navbar__menu-spacer"></div>
-        <div class="navbar__menu-items">
-          <div><a href="#about">About</a></div>
-          <div><a href="#projects">Projects</a></div>
-          <div>
-            <a href="#contact">Contact</a>
-          </div>
-        </div>
-      </div>
-    </nav>
+    <!-- The sidebar -->
+    <div class="sidebar">
 
-    <main class="main">
-      <header id="about">
+      <div class="circle">
+        <div id="avatar">KC</div>
+      </div>
+
+      <div class="sidebar-header">
+        Kimberly Cable
+      </div>
+
+      <div class="menu" id="menu">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#curr-projects">Current Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="copyright">
+        Kimberly Cable &copy; <span id="year"></span>
+      </div>
+    </div>
+
+    <div class="content">
+      <!-- About Page -->
+      <section class="page" id="about" name="about">
         <h4>Hi! My name is</h4>
         <h1>Kimberly Cable</h1>
-        <h3>I'm a Full-Stack Developer based in Denver, CO.</h3>
+        <h3>I'm a Data Scientist and Developer based in Denver, CO.</h3>
         <p>
-          Coding for me is an art form and puzzle I enjoy solving. Whether it’s
-          CSS, Javascript (ES6), PHP, React or a new set of tools, the challenge
-          of starting from an idea and making it a usable, functional
-          application is what I enjoy. The collaboration between developers,
-          learning and working together, is what a great team and application
-          are all about.
+          My background is in software development but the world of data just pulled me in.
         </p>
-        <p>
-          When I'm not coding, you can find my in my studio creating fused and
-          stained glass or out enjoying the Colorado mountains.
-        </p>
-      </header>
+      </section>
 
-      <section id="projects" class="main__projects">
-        <h2>Projects</h2>
+      
+      <!-- Skills Page -->
+      <section class="page" id="skills" name="skills">
+        <h2>Skills</h2>
         <hr />
 
-        <div class="main__projects-contents">
-          <div class="main__projects-project">
-            <div class="main__projects-project-info">
-              <img src="./assets/images/fulfillment.png" alt="Fulfillment screenshot" />
-              <div class="main__projects-project-info-name">
-                Fulfillment
+        <div class="skills-container">
+          <div class="skills">
+            <div class="grid-header"> Programming Languages</div>
+            <div class="grid-list">
+              <ul>
+                <li>Python</li>
+                <li>R</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>React.js</li>
+                <li>Flask</li>
+              </ul>
+            </div>
+          </div>
+          <div class="skills">
+            <div class="grid-header">Machine Learning</div>
+            <div class="grid-list">
+              <ul>
+                <li>tensorflow</li>
+                <li>pytorch</li>
+                <li>scikit_learn</li>
+                <li>pandas</li>
+                <li>seaborn</li>
+              </ul>
+            </div>
+          </div>
+          <div class="skills">
+            <div class="grid-header">Databases</div>
+            <div class="grid-list">
+              <ul>
+                <li>SQLite</li>
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
+              </ul>
+            </div>
+          </div>
+          <div class="skills">
+            <div class="grid-header">Data Visualization</div>
+            <div class="grid-list">
+              <ul>
+                <li>Tableau</li>
+                <li>matplotlib</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Projects Page -->
+      <section class="page" id="curr-projects" name="curr-projects">
+        <h2>Current Projects</h2>
+        <hr />
+      
+        <div class="projects">
+          <!-- Data Wrangling Project -->
+          <div class="project">
+            <button class="trigger">
+              <div>
+                <img src="./assets/images/data wrangling.png" alt="Data Wrangling" />
               </div>
-              <div class="main__projects-project-info-tech">
+              <div class="name">
+                Data Wrangling
+              </div>
+              <div class="tech">
                 <ul>
-                  <li>SCSS/Bootstrap <span class="verticalBar">&verbar;</span></li>
-                  <li>Node.js <span class="verticalBar">&verbar;</span></li>
-                  <li>React/Hooks <span class="verticalBar">&verbar;</span></li>
-                  <li>Express <span class="verticalBar">&verbar;</span></li>
-                  <li>PostgreSQL</li>
+                  <li>Python 3  <span class="verticalBar">&verbar;</span></li>
+                  <li>Data Cleaning <span class="verticalBar">&verbar;</span></li>
+                  <li>EDA <span class="verticalBar">&verbar;</span></li>
+                  <li>BeautifulSoup <span class="verticalBar">&verbar;</span></li>
+                  <li>SQLite </li>
                 </ul>
               </div>
-            </div>
-
-            <div class="main__projects-project-modal">
-              <div class="main__projects-project-modal-content">
-                <span class="main__projects-project-modal-content-close">&times;</span>
-                <div class="main__projects-project-modal-content-name">
-                  Fulfillment
+            </button>
+            <div class="modal" id="modal01">
+              <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <div class="modal-content-name">
+                  Data Wrangling
                 </div>
-                <div class="main__projects-project-modal-content-img">
-                  <img src="./assets/images/fulfillment.png" alt="Fulfillment screenshot" />
+                <div class="modal-content-img">
+                  <img src="./assets/images/data wrangling.png" alt="Data Wrangling" />
                 </div>
-                <div class="main__projects-project-modal-content-desc">
-                  This is an application to track Pick, Pack, and OPU statistics for Team Members working in Fulfillment.
+                <div class="modal-content-title">
+                  National Parks
                 </div>
-                <div class="main__projects-project-modal-content-tech">
+                <div class="modal-content-desc">
+                  <p>
+                    Data Wrangling is the process of transforming data from an unreadable format to another format to make it more appropriate for analysis.
+                    This project takes three different forms of data and merges it into one all with the National Parks as its theme.
+                  </p>
+                  <p>
+                    Each of the three data sources has its own unique information but also some overlap. 
+                    The National Parks API has all information about each of the national parks in its system. 
+                    The National Parks Trails CSV is derived from the AllTrails website and has information on the trails 
+                    located in the National Parks. The National Parks elevation table from Wikipedia is a table of the highest 
+                    and lowest elevations in 63 National Parks. Initially. looking at the data for each source, the National 
+                    Parks API looks to be the parent as it has the most accurate information coming directly from the 
+                    National Parks Service. I will be using the park’s endpoint to get data about 
+                    all the National Parks in its database. The CSV file contains the name of the National 
+                    Park which I will use to connect it to the API data. The website also has the National Park 
+                    name which will connect to the API data.
+                  </p>
+                </div>
+                <div class="tech">
+                  <h3>Technology Used</h3>
                   <ul>
-                    <li>SCSS/Bootstrap <span class="verticalBar">&verbar;</span></li>
-                    <li>Node.js <span class="verticalBar">&verbar;</span></li>
-                    <li>
-                      React/Hooks <span class="verticalBar">&verbar;</span>
-                    </li>
-                    <li>Express <span class="verticalBar">&verbar;</span></li>
-                    <li>PostgreSQL</li>
+                    <li>Python 3 <span class="verticalBar">&verbar;</span></li>
+                    <li>Data Cleaning <span class="verticalBar">&verbar;</span></li>
+                    <li>EDA <span class="verticalBar">&verbar;</span></li>
+                    <li>BeautifulSoup <span class="verticalBar">&verbar;</span></li>
+                    <li>SQLite</li>
                   </ul>
                 </div>
-                <div class="main__projects-project-modal-content-icons">
+                <div class="icons">
+                  <h3>GitHub</h3>
                   <ul>
                     <li>
-                      <a href="https://github.com/cableredi/fulfillment" target="_blank" rel="noopener">
-                        <i class="fab fa-github"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://fulfillment-six.vercel.app/" target="_blank" rel="noopener">
-                        <i class="fas fa-external-link-alt"></i>
+                      <a href="https://github.com/cableredi/Data-Wrangling" target="_blank" rel="noopener">
+                        <ion-icon name="logo-github"></ion-icon>
                       </a>
                     </li>
                   </ul>
@@ -125,56 +184,71 @@
             </div>
           </div>
 
-          <div class="main__projects-project">
-            <div class="main__projects-project-info">
-              <img src="./assets/images/videogameblog.png" alt="VideoGameBlog screenshot" />
-              <div class="main__projects-project-info-name">
-                Video Game Blog
+          <!-- Customer Segmentation Project -->
+          <div class="project">
+            <button class="trigger">
+              <img src="./assets/images/Customer Segmentation.png" alt="Customer Segmentation" />
+              <div class="name">
+                Customer Segmentation
               </div>
-              <div class="main__projects-project-info-tech">
+              <div class="tech">
                 <ul>
-                  <li>SCSS/CSS <span class="verticalBar">&verbar;</span></li>
-                  <li>Node.js <span class="verticalBar">&verbar;</span></li>
-                  <li>React/Hooks <span class="verticalBar">&verbar;</span></li>
-                  <li>Express <span class="verticalBar">&verbar;</span></li>
-                  <li>PostgreSQL</li>
+                  <li>Python 3 <span class="verticalBar">&verbar;</span></li>
+                  <li>Data Cleaning <span class="verticalBar">&verbar;</span></li>
+                  <li>EDA <span class="verticalBar">&verbar;</span></li>
+                  <li>RFM Analysis <span class="verticalBar">&verbar;</span></li>
+                  <li>K-Means Clustering</li>
                 </ul>
               </div>
-            </div>
-
-            <div class="main__projects-project-modal">
-              <div class="main__projects-project-modal-content">
-                <span class="main__projects-project-modal-content-close">&times;</span>
-                <div class="main__projects-project-modal-content-name">
-                  Video Game Blog
+            </button>
+            <div class="modal"  id="modal02">
+              <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <div class="modal-content-name">
+                  Customer Segmentation
                 </div>
-                <div class="main__projects-project-modal-content-img">
-                  <img src="./assets/images/videogameblog.png" alt="VideoGameBlog screenshot" />
+                <div class="modal-content-img">
+                  <img src="./assets/images/Customer Segmentation.png" alt="Customer Segmentation" />
                 </div>
-                <div class="main__projects-project-modal-content-desc">
-                  Challenge: to create a video game blog based on requirements.
+                <div class="modal-content-title">
+                  olist - A Brazilian E-Commerce Company
                 </div>
-                <div class="main__projects-project-modal-content-tech">
+                <div class="modal-content-desc">
+                  <p>
+                    Olist is a Brazilian e-commerce company that connects small businesses to a larger marketplace. 
+                    It gives these small businesses a way to manage their products, shipping, and online payments. 
+                    They have approximately 200,000 users in about 180 countries.
+                  </p>
+                  <p>
+                    With any online retailer, retaining customers is key but knowing who may leave and who stays could be guesswork.  
+                    Understanding how and why customers stay and shop and why they leave is pivotal to a company’s business.
+                  </p>
+                  <p>
+                    Knowing who your customers are and how and why they shop or do not return plays a big part in customer service which 
+                    ultimately enhances a customer’s satisfaction level. A high satisfaction level could lead to overall better reviews 
+                    and with these good reviews, their sellers will see more new sales.
+                  </p>
+                  <p>
+                    This study will hope to find similar traits among its customers.  This will help the marketing team know who best 
+                    to send offers to or to whom might they need to send a discount coupon because it looks like they haven’t purchased in a while.
+                  </p>
+                </div>
+                <div class="tech">
+                  <h3>Technology Used</h3>
                   <ul>
-                    <li>SCSS/CSS <span class="verticalBar">&verbar;</span></li>
-                    <li>Node.js <span class="verticalBar">&verbar;</span></li>
-                    <li>
-                      React/Hooks <span class="verticalBar">&verbar;</span>
-                    </li>
-                    <li>Express <span class="verticalBar">&verbar;</span></li>
-                    <li>PostgreSQL</li>
+                    <li>Python 3 <span class="verticalBar">&verbar;</span></li>
+                    <li>Data Cleaning <span class="verticalBar">&verbar;</span></li>
+                    <li>EDA <span class="verticalBar">&verbar;</span></li>
+                    <li>RFM Analysis <span class="verticalBar">&verbar;</span></li>
+                    <li>K-Means Clustering</li>
                   </ul>
                 </div>
-                <div class="main__projects-project-modal-content-icons">
+                <div class="icons">
+                  <h3>GitHub</h3>
                   <ul>
                     <li>
-                      <a href="https://github.com/cableredi/VideoGameBlog" target="_blank" rel="noopener">
-                        <i class="fab fa-github"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://videogameblog.vercel.app/" target="_blank" rel="noopener">
-                        <i class="fas fa-external-link-alt"></i>
+                      <a href="https://github.com/cableredi/Customer-Segmentation" target="_blank" rel="noopener">
+                        <ion-icon name="logo-github"></ion-icon>
                       </a>
                     </li>
                   </ul>
@@ -183,53 +257,73 @@
             </div>
           </div>
 
-          <div class="main__projects-project">
-            <div class="main__projects-project-info">
-              <img src="./assets/images/StockTweets.PNG" alt="StockTweets screenshot" />
-              <div class="main__projects-project-info-name">StockTweets</div>
-              <div class="main__projects-project-info-tech">
+          <!-- Data Visualization Project -->
+          <div class="project">
+            <button class="trigger">
+              <img src="./assets/images/Data Visualization.png" alt="Data Visualization" />
+              <div class="name">
+                Data Visualization
+              </div>
+              <div class="tech">
                 <ul>
-                  <li>SCSS/CSS <span class="verticalBar">&verbar;</span></li>
-                  <li>Node.js <span class="verticalBar">&verbar;</span></li>
-                  <li>React/Hooks <span class="verticalBar">&verbar;</span></li>
-                  <li>Express</li>
+                  <li>Tableau <span class="verticalBar">&verbar;</span></li>
+                  <li>MS Word <span class="verticalBar">&verbar;</span></li>
+                  <li>MS Powerpoint </li>
                 </ul>
               </div>
-            </div>
-
-            <div class="main__projects-project-modal">
-              <div class="main__projects-project-modal-content">
-                <span class="main__projects-project-modal-content-close">&times;</span>
-                <div class="main__projects-project-modal-content-name">
-                  StockTweets
+            </button>
+            <div class="modal"  id="modal03">
+              <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <div class="modal-content-name">
+                  Data Visualization
                 </div>
-                <div class="main__projects-project-modal-content-img">
-                  <img src="./assets/images/StockTweets.PNG" alt="StockTweets screenshot" />
+                <div class="modal-content-img">
+                  <img src="./assets/images/Data Visualization.png" alt="Data Visualization" />
                 </div>
-                <div class="main__projects-project-modal-content-desc">
-                  StockTweets gets all the latest tweets in realtime from your
-                  favorite Stock Tickers powered by StockTwits API
+                <div class="modal-content-title">
+                  Airline Crashes in the Media
                 </div>
-                <div class="main__projects-project-modal-content-tech">
+                <div class="modal-content-desc">
+                  <p>
+                    Due to recent unfortunate airline crashes, the media has been promoting statistics stating air is no longer 
+                    a safe way to travel. The news and media outlets have been bombarding the public with reports and figures about 
+                    the trends of airline safety and that things are not looking good. What was previously thought as the safest way 
+                    to travel, especially when compared to automobiles, is now being presented as one of the most dangerous to the public. 
+                    But are any of these claims based on facts?
+                  </p>
+                  <p>
+                    You work for an airline on the data science team as a data analyst and are a resident data visualization expert. 
+                    You have been tasked with helping multiple groups in the organization combat this negative publicity and help tell 
+                    the airline's side of the story. There is a fear internally about what this type of media coverage will do to airline 
+                    sales and how it could impact the future of the company. Not only do they need you to help create some internal 
+                    communications, but you will also be tasked with what is published to the public and the media
+                  </p>
+                  <p>
+                    5 Data Visualizations Projects
+                    <ol>
+                      <li>Dashboard for internal use</li>
+                      <li>Executive Summary for senior leaders</li>
+                      <li>Blog Post for the public</li>
+                      <li>Infographic for the public</li>
+                      <li>Video Presentation (3 minute Story)</li>
+                    </ol>
+                  </p>
+                </div>
+                <div class="tech">
+                  <h3>Technology Used</h3>
                   <ul>
-                    <li>SCSS/CSS <span class="verticalBar">&verbar;</span></li>
-                    <li>Node.js <span class="verticalBar">&verbar;</span></li>
-                    <li>
-                      React/Hooks <span class="verticalBar">&verbar;</span>
-                    </li>
-                    <li>Express</li>
+                    <li>Tableau <span class="verticalBar">&verbar;</span></li>
+                    <li>MS Word <span class="verticalBar">&verbar;</span></li>
+                    <li>MS Powerpoint </li>
                   </ul>
                 </div>
-                <div class="main__projects-project-modal-content-icons">
+                <div class="icons">
+                  <h3>GitHub</h3>
                   <ul>
                     <li>
-                      <a href="https://github.com/cableredi/stocktweets" target="_blank" rel="noopener">
-                        <i class="fab fa-github"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://stocktweets.now.sh" target="_blank" rel="noopener">
-                        <i class="fas fa-external-link-alt"></i>
+                      <a href="https://github.com/cableredi/Data-Visualization" target="_blank" rel="noopener">
+                        <ion-icon name="logo-github"></ion-icon>
                       </a>
                     </li>
                   </ul>
@@ -238,54 +332,69 @@
             </div>
           </div>
 
-          <div class="main__projects-project">
-            <div class="main__projects-project-info">
-              <img src="./assets/images/Bedbugs.PNG" alt="Bedbugs screenshot" />
-              <div class="main__projects-project-info-name">bedbugs</div>
-              <div class="main__projects-project-info-tech">
+          <!-- Chocolate Prediction Project -->
+          <div class="project">
+            <button class="trigger">
+              <img src="./assets/images/chocolate_prediction.png" alt="Chocolate Prediction" />
+              <div class="name">
+                Chocolate Prediction
+              </div>
+              <div class="tech">
                 <ul>
-                  <li>SCSS/CSS <span class="verticalBar">&verbar;</span></li>
-                  <li>Node.js <span class="verticalBar">&verbar;</span></li>
-                  <li>React <span class="verticalBar">&verbar;</span></li>
-                  <li>Express <span class="verticalBar">&verbar;</span></li>
-                  <li>PostgreSQL</li>
+                  <li>Python 3 <span class="verticalBar">&verbar;</span></li>
+                  <li>pandas <span class="verticalBar">&verbar;</span></li>
+                  <li>matplotlib <span class="verticalBar">&verbar;</span></li>
+                  <li>numpy <span class="verticalBar">&verbar;</span></li>
+                  <li>seaborn <span class="verticalBar">&verbar;</span></li>
+                  <li>wordcloud </li>
                 </ul>
               </div>
-            </div>
-
-            <div class="main__projects-project-modal">
-              <div class="main__projects-project-modal-content">
-                <span class="main__projects-project-modal-content-close">&times;</span>
-                <div class="main__projects-project-modal-content-name">
-                  bedbugs
+            </button>
+            <div class="modal"  id="modal04">
+              <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <div class="modal-content-name">
+                  Chocolate Prediction
                 </div>
-                <div class="main__projects-project-modal-content-img">
-                  <img src="./assets/images/Bedbugs.PNG" alt="Bedbugs screenshot" />
+                <div class="modal-content-img">
+                  <img src="./assets/images/chocolate_prediction.png" alt="Chocolate Prediction" />
                 </div>
-                <div class="main__projects-project-modal-content-desc">
-                  bedbugs gives users the ability to input any applications they
-                  are working on to help them track the bugs they are working
-                  on.
+                <div class="modal-content-title">
+                  Flavors of Cacao
                 </div>
-                <div class="main__projects-project-modal-content-tech">
+                <div class="modal-content-desc">
+                  <p>
+                    Chocolate is loved by many worldwide.  But what makes good chocolate?  Chocolatiers, home cooks, 
+                    and lovers of chocolate eat, use and make chocolate.  Knowing where to get good chocolate could make or break a 
+                    recipe or even a good relationship.
+                  </p>
+                  <p>
+                    The data comes from the Flavors of Cacao website and their Chocolate Bar Ratings table. 
+                    The data includes features such as cocoa content, where it was made, bean origin, the number of ingredients, 
+                    and its characteristics and rating. I will also get the USA Craft Makers table and merge it with the Chocolate 
+                    Bar Ratings to look more closely at the US Chocolate Companies.
+                  </p>
+                  <p>
+                    I plan to look to see if I can predict the ratings for chocolate in the US and see if any features play a part in good chocolate. 
+                  </p>
+                </div>
+                <div class="tech">
+                  <h3>Technology Used</h3>
                   <ul>
-                    <li>SCSS/CSS <span class="verticalBar">&verbar;</span></li>
-                    <li>Node.js <span class="verticalBar">&verbar;</span></li>
-                    <li>React <span class="verticalBar">&verbar;</span></li>
-                    <li>Express <span class="verticalBar">&verbar;</span></li>
-                    <li>PostgreSQL</li>
+                    <li>Python 3 <span class="verticalBar">&verbar;</span></li>
+                    <li>pandas <span class="verticalBar">&verbar;</span></li>
+                    <li>matplotlib <span class="verticalBar">&verbar;</span></li>
+                    <li>numpy <span class="verticalBar">&verbar;</span></li>
+                    <li>seaborn <span class="verticalBar">&verbar;</span></li>
+                    <li>wordcloud </li>
                   </ul>
                 </div>
-                <div class="main__projects-project-modal-content-icons">
+                <div class="icons">
+                  <h3>GitHub</h3>
                   <ul>
                     <li>
-                      <a href="https://github.com/cableredi/bedbugs-client" target="_blank" rel="noopener">
-                        <i class="fab fa-github"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://github.com/cableredi/bedbugs-api" target="_blank" rel="noopener">
-                        <i class="fab fa-github"></i>
+                      <a href="https://github.com/cableredi/XXX" target="_blank" rel="noopener">
+                        <ion-icon name="logo-github"></ion-icon>
                       </a>
                     </li>
                   </ul>
@@ -294,60 +403,63 @@
             </div>
           </div>
 
-          <div class="main__projects-project">
-            <div class="main__projects-project-info">
-              <img src="./assets/images/MyClassroom.PNG" alt="MyClassroom screenshot" />
-              <div class="main__projects-project-info-name">MyClassroom</div>
-              <div class="main__projects-project-info-tech">
+          <!-- Chatbot Project -->
+          <div class="project">
+            <button class="trigger">
+              <img src="./assets/images/chatbot.png" alt="ChatBot" />
+              <div class="name">
+                Chatbot
+              </div>
+              <div class="tech">
                 <ul>
-                  <li>SCSS/CSS <span class="verticalBar">&verbar;</span></li>
-                  <li>Node.js <span class="verticalBar">&verbar;</span></li>
-                  <li>React <span class="verticalBar">&verbar;</span></li>
-                  <li>Express <span class="verticalBar">&verbar;</span></li>
-                  <li>PostgreSQL</li>
+                  <li>Python 3 <span class="verticalBar">&verbar;</span></li>
+                  <li>Tkinter <span class="verticalBar">&verbar;</span></li>
+                  <li>sklearn <span class="verticalBar">&verbar;</span></li>
+                  <li>tensorflow <span class="verticalBar">&verbar;</span></li>
+                  <li>nltk <span class="verticalBar">&verbar;</span></li>
+                  <li>json <span class="verticalBar">&verbar;</span></li>
+                  <li>pickle </li>
                 </ul>
               </div>
-            </div>
-
-            <div class="main__projects-project-modal">
-              <div class="main__projects-project-modal-content">
-                <span class="main__projects-project-modal-content-close">&times;</span>
-                <div class="main__projects-project-modal-content-name">
-                  MyClassroom
+            </button>
+            <div class="modal"  id="modal05">
+              <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <div class="content-name">
+                  Chatbot
                 </div>
-                <div class="main__projects-project-modal-content-img">
-                  <img src="./assets/images/MyClassroom.PNG" alt="MyClassroom screenshot" />
+                <div class="modal-content-img">
+                  <img src="./assets/images/chatbot.png" alt="Chatbot" />
                 </div>
-                <div class="main__projects-project-modal-content-desc">
-                  MyClassroom is a simple and effective way for
-                  teachers/professors/tutors/etc to effectively communicate with
-                  their students the upcoming assignments, tests, quizzes,
-                  projects, etc.
+                <div class="modal-content-title">
+                  Stained Glass Chatbot
                 </div>
-                <div class="main__projects-project-modal-content-tech">
+                <div class="modal-content-desc">
+                  <p>
+                    When you are first learning a hobby, you have a lot of questions. Some go to classes, some go to books, 
+                    and some go online to find answers.  The problem arises when a student goes home from a class or reads a book or 
+                    blog, they still have questions. This chatbot is aimed to help consolidate a lot of questions the user may have 
+                    into a learning environment where the chatbot can help answer those questions.
+                  </p>
+                </div>
+                <div class="tech">
+                  <h3>Technology Used</h3>
                   <ul>
-                    <li>SCSS/CSS <span class="verticalBar">&verbar;</span></li>
-                    <li>Node.js <span class="verticalBar">&verbar;</span></li>
-                    <li>React <span class="verticalBar">&verbar;</span></li>
-                    <li>Express <span class="verticalBar">&verbar;</span></li>
-                    <li>PostgreSQL</li>
+                    <li>Python 3 <span class="verticalBar">&verbar;</span></li>
+                    <li>Tkinter <span class="verticalBar">&verbar;</span></li>
+                    <li>sklearn <span class="verticalBar">&verbar;</span></li>
+                    <li>tensorflow <span class="verticalBar">&verbar;</span></li>
+                    <li>nltk <span class="verticalBar">&verbar;</span></li>
+                    <li>json <span class="verticalBar">&verbar;</span></li>
+                    <li>pickle </li>
                   </ul>
                 </div>
-                <div class="main__projects-project-modal-content-icons">
+                <div class="icons">
+                  <h3>GitHub</h3>
                   <ul>
                     <li>
-                      <a href="https://github.com/cableredi/MyClassroom" target="_blank" rel="noopener">
-                        <i class="fab fa-github"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://github.com/cableredi/myclassroom-api" target="_blank" rel="noopener">
-                        <i class="fab fa-github"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://myclassroom.now.sh" target="_blank" rel="noopener">
-                        <i class="fas fa-external-link-alt"></i>
+                      <a href="https://github.com/cableredi/chatbot" target="_blank" rel="noopener">
+                        <ion-icon name="logo-github"></ion-icon>
                       </a>
                     </li>
                   </ul>
@@ -356,61 +468,50 @@
             </div>
           </div>
 
-          <div class="main__projects-project">
-            <div class="main__projects-project-info">
-              <img src="./assets/images/StudioGhibli.png" alt="Welcome to the World of Studio Ghibli" />
-              <div class="main__projects-project-info-name">
-                Welcome to the World of Studio Ghibli
+          <!-- Computer Vision Project -->
+          <div class="project">
+            <button class="trigger">
+              <img src="./assets/images/computervision.png" alt="Computer Vision" />
+              <div class="name">
+                Computer Vision
               </div>
-              <div class="main__projects-project-info-tech">
+              <div class="tech">
                 <ul>
-                  <li>HTML <span class="verticalBar">&verbar;</span></li>
-                  <li>CSS <span class="verticalBar">&verbar;</span></li>
-                  <li>
-                    Javascript (ES6)
-                    <span class="verticalBar">&verbar;</span>
-                  </li>
-                  <li>JQuery</li>
+                  <li>Python 3 <span class="verticalBar">&verbar;</span></li>
+                  <li>Flask <span class="verticalBar">&verbar;</span></li>
+                  <li>tensorflow</li>
                 </ul>
               </div>
-            </div>
-
-            <div class="main__projects-project-modal">
-              <div class="main__projects-project-modal-content">
-                <span class="main__projects-project-modal-content-close">&times;</span>
-                <div class="main__projects-project-modal-content-name">
-                  Welcome to the World of Studio Ghibli
+            </button>
+            <div class="modal"  id="modal06">
+              <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <div class="modal-content-name">
+                  Computer Vision
                 </div>
-                <div class="main__projects-project-modal-content-img">
-                  <img src="./assets/images/StudioGhibli.png" alt="Welcome to the World of Studio Ghibli" />
+                <div class="modal-content-img">
+                  <img src="./assets/images/computervision.png" alt="Computer Vision" />
                 </div>
-                <div class="main__projects-project-modal-content-desc">
-                  StudioGhibli shows you the world of the Studio Ghibli films.
-                  See about each film and the beautiful artwork and posters
-                  created for each film.
+                <div class="modal-content-title">
+                  Learn Your Letters
                 </div>
-                <div class="main__projects-project-modal-content-tech">
+                <div class="modal-content-desc">
+                  <p>This project helps children and adults learn to write their letters on the computer.</p>
+                </div>
+                <div class="tech">
+                  <h3>Technology Used</h3>
                   <ul>
-                    <li>HTML <span class="verticalBar">&verbar;</span></li>
-                    <li>CSS <span class="verticalBar">&verbar;</span></li>
-                    <li>
-                      Javascript (ES6)<span class="verticalBar">&verbar;</span>
-                    </li>
-                    <li>
-                      JQuery
-                    </li>
+                    <li>Python 3 <span class="verticalBar">&verbar;</span></li>
+                    <li>Flask <span class="verticalBar">&verbar;</span></li>
+                    <li>tensorflow</li>
                   </ul>
                 </div>
-                <div class="main__projects-project-modal-content-icons">
+                <div class="icons">
+                  <h3>GitHub</h3>
                   <ul>
                     <li>
-                      <a href="https://github.com/cableredi/StudioGhibli" target="_blank" rel="noopener">
-                        <i class="fab fa-github"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://cableredi.github.io/StudioGhibli/" target="_blank" rel="noopener">
-                        <i class="fas fa-external-link-alt"></i>
+                      <a href="" target="_blank" rel="noopener">
+                        <ion-icon name="logo-github"></ion-icon>
                       </a>
                     </li>
                   </ul>
@@ -419,122 +520,48 @@
             </div>
           </div>
 
-          <div class="main__projects-project">
-            <div class="main__projects-project-info">
-              <img src="./assets/images/soccer-quiz-home.png"
-                alt="How well do you know your soccer moves Quiz screenshot" />
-              <div class="main__projects-project-info-name">
-                Do you know your soccer moves? Quiz
+          <!-- Weather Forecast Project -->
+          <div class="project">
+            <button class="trigger">
+              <img src="./assets/images/weather_station.png" alt="Weather Forecast" />
+              <div class="name">
+                Weather Forecast
               </div>
-              <div class="main__projects-project-info-tech">
+              <div class="tech">
                 <ul>
-                  <li>HTML <span class="verticalBar">&verbar;</span></li>
-                  <li>CSS <span class="verticalBar">&verbar;</span></li>
-                  <li>
-                    Javascript (ES6)
-                    <span class="verticalBar">&verbar;</span> JQuery
-                  </li>
+                  <li>Python 3 <span class="verticalBar">&verbar;</span></li>
+                  <li>Open Weather API</li>
                 </ul>
               </div>
-            </div>
-
-            <div class="main__projects-project-modal">
-              <div class="main__projects-project-modal-content">
-                <span class="main__projects-project-modal-content-close">&times;</span>
-                <div class="main__projects-project-modal-content-name">
-                  Do you know your soccer moves? Quiz
+            </button>
+            <div class="modal"  id="modal06">
+              <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <div class="modal-content-name">
+                  Weather Forecast
                 </div>
-                <div class="main__projects-project-modal-content-img">
-                  <img src="./assets/images/soccer-quiz-home.png"
-                    alt="How well do you know your soccer moves Quiz screenshot" />
+                <div class="modal-content-img">
+                  <img src="./assets/images/weather_station.png" alt="Weather Forecast" />
                 </div>
-                <div class="main__projects-project-modal-content-desc">
-                  Allows users to test their knowledge of various elite soccer
-                  moves.
+                <div class="modal-content-title">
+                  Weather Forecast
                 </div>
-                <div class="main__projects-project-modal-content-tech">
+                <div class="modal-content-desc">
+                  <p>Get the latest weather from Open Weather API based on your city or zip code</p>
+                </div>
+                <div class="tech">
+                  <h3>Technology Used</h3>
                   <ul>
-                    <li>HTML <span class="verticalBar">&verbar;</span></li>
-                    <li>CSS <span class="verticalBar">&verbar;</span></li>
-                    <li>
-                      Javascript (ES6)<span class="verticalBar">&verbar;</span>
-                    </li>
-                    <li>
-                      JQuery
-                    </li>
+                    <li>Python 3 <span class="verticalBar">&verbar;</span></li>
+                    <li>Open Weather API</li>
                   </ul>
                 </div>
-                <div class="main__projects-project-modal-content-icons">
+                <div class="icons">
+                  <h3>GitHub</h3>
                   <ul>
                     <li>
-                      <a href="https://github.com/cableredi/soccer-quiz" target="_blank" rel="noopener">
-                        <i class="fab fa-github"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://cableredi.github.io/soccer-quiz/" target="_blank" rel="noopener">
-                        <i class="fas fa-external-link-alt"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="main__projects-project">
-            <div class="main__projects-project-info">
-              <img src="./assets/images/IFASoccer-home.png" alt="IFA Soccer screenshot" />
-              <div class="main__projects-project-info-name">
-                International Futbol Academy, LLC
-              </div>
-              <div class="main__projects-project-info-tech">
-                <ul>
-                  <li>HTML <span class="verticalBar">&verbar;</span></li>
-                  <li>CSS <span class="verticalBar">&verbar;</span></li>
-                  <li>Javascript <span class="verticalBar">&verbar;</span></li>
-                  <li>Bootstrap <span class="verticalBar">&verbar;</span></li>
-                  <li>
-                    PHP/CodeIgniter <span class="verticalBar">&verbar;</span>
-                  </li>
-                  <li>MySQL <span class="verticalBar"></span></li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="main__projects-project-modal">
-              <div class="main__projects-project-modal-content">
-                <span class="main__projects-project-modal-content-close">&times;</span>
-                <div class="main__projects-project-modal-content-name">
-                  International Futbol Academy, LLC
-                </div>
-                <div class="main__projects-project-modal-content-img">
-                  <img src="./assets/images/IFASoccer-home.png" alt="IFA Soccer screenshot" />
-                </div>
-                <div class="main__projects-project-modal-content-desc">
-                  IFA Soccer displays information about upcoming camps and
-                  allows users the ability to register for camps and pay via
-                  PayPal.
-                </div>
-                <div class="main__projects-project-modal-content-tech">
-                  <ul>
-                    <li>HTML <span class="verticalBar">&verbar;</span></li>
-                    <li>CSS <span class="verticalBar">&verbar;</span></li>
-                    <li>
-                      Javascript <span class="verticalBar">&verbar;</span>
-                    </li>
-                    <li>Bootstrap <span class="verticalBar">&verbar;</span></li>
-                    <li>
-                      PHP/CodeIgniter <span class="verticalBar">&verbar;</span>
-                    </li>
-                    <li>MySQL <span class="verticalBar"></span></li>
-                  </ul>
-                </div>
-                <div class="main__projects-project-modal-content-icons">
-                  <ul>
-                    <li>
-                      <a href="http://www.ifasoccer.com" target="_blank" rel="noopener">
-                        <i class="fas fa-external-link-alt"></i>
+                      <a href="https://github.com/cableredi/weather-api" target="_blank" rel="noopener">
+                        <ion-icon name="logo-github"></ion-icon>
                       </a>
                     </li>
                   </ul>
@@ -545,40 +572,41 @@
         </div>
       </section>
 
-      <section id="contact" class="main__contact">
-        <h2>Contact</h2>
-        <hr />
+      <!-- Contact Page -->
+      <section class="page" id="contact" name="contact">
+        <div id="contact-info">
+          <h2>Contact</h2>
+          <hr />
 
-        <h3 class="main__contact-header">Ways to Get in Touch</h3>
+          <h3 class="header">Ways to Get in Touch</h3>
 
-        <div class="main__contact-icons">
-          <ul>
-            <li>
-              <a href="https://www.linkedin.com/in/kimberly-cable" target="_blank" rel="noopener">
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/cableredi" target="_blank" rel="noopener">
-                <i class="fab fa-github"></i>
-              </a>
-            </li>
-            <li>
-              <a href="mailto:cableredi@comcast.net?Subject=Contact%20Me" target="_top">
-                <i class="far fa-envelope"></i>
-              </a>
-            </li>
-          </ul>
+          <div class="icons">
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/in/kimberly-cable" target="_blank" rel="noopener">
+                  <ion-icon name="logo-linkedin" size="large"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/cableredi" target="_blank" rel="noopener">
+                  <ion-icon name="logo-github" size="large"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:cableredi@comcast.net?Subject=Contact%20Me" target="_top">
+                  <ion-icon name="mail-outline" size="large"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
+    </div>
 
-      <div id="page-mask"></div>
-    </main>
-
-    <footer>Kimberly Cable &copy; <span id="year"></span></footer>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="./assets/scripts/scripts.js"></script>
-  </body>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+  </body>
 </html>
