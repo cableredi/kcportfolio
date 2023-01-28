@@ -18,16 +18,16 @@ Python3, R, pandas, matplotlib, seaborn, skikit-learn, numpy, SQL, Tableau, and 
 
 ## Projects
 
-* ### Data Wrangling
+* ### [Data Wrangling](https://github.com/cableredi/Data-Wrangling)
 
-* ### Customer Segmentation
+* ### [Customer Segmentation](https://github.com/cableredi/Customer-Segmentation)
 
-* ### Data Visualization
+* ### [Data Visualization](https://github.com/cableredi/Data-Visualization)
 
-* ### Chocolate Prediction
+* ### [Chocolate Prediction](https://github.com/cableredi/Chocolate-Prediction)
 
-* ### Computer Vision - Chatbot
+* ### [Computer Vision - Chatbot](https://github.com/cableredi/chatbot)
 
-* ### Computer Vision - Learn to Write your Letters
+* ### [Computer Vision - Learn to Write your Letters](https://github.com/cableredi/learn-write-letters)
 
-* ### Weather Forecast
+* ### [Weather Forecast](https://github.com/cableredi/weather-api)
