@@ -30,4 +30,6 @@ Python3, R, pandas, matplotlib, seaborn, skikit-learn, numpy, SQL, Tableau, and 
 
 * ### [Computer Vision - Learn to Write your Letters](https://github.com/cableredi/learn-write-letters)
 
+* ### [Python, R, Tableau Chart](https://github.com/cableredi/Python-R-Tableau-Charts)
+
 * ### [Weather Forecast](https://github.com/cableredi/weather-api)
