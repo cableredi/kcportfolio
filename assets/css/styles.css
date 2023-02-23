@@ -354,6 +354,11 @@ div.content {
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 
+.comingsoon {
+    font-size: .7em;
+    font-style: italic;
+}
+
 /* Contact Section */
 #contact {
     height: 100%
