@@ -33,3 +33,5 @@ Python3, R, pandas, matplotlib, seaborn, skikit-learn, numpy, SQL, Tableau, and 
 * ### [Python, R, Tableau Chart](https://github.com/cableredi/Python-R-Tableau-Charts)
 
 * ### [Weather Forecast](https://github.com/cableredi/weather-api)
+
+* ### Handmade Collective - coming soon (in progress)
