@@ -1,9 +1,9 @@
 # Welcome to my Portfolio
 
 ## About
-Hi, I'm a Data Scientist and Developer based in Denver, CO.
+Hi, I'm a Data Engineer and Software Developer based in Denver, CO.
 <br />
-My background is in software development but the world of data just pulled me in.
+I'm a lifelong learner. I'm a software developer with a Master of Science in Data Science. The best of all worlds.
 
 ## Summary
 Here you will find projects that I have done and the skills that I have aquired.
